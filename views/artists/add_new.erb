@@ -1,0 +1,8 @@
+<h1>All artists</h1>
+<% @first_names.each do |name| %>
+  <div><%= name %></div>
+<% end %>
+<h2>Enter New Name and Nationality then hit Enter</h2>
+<form action="add_name" method="POST">
+  <input name="name"><input nationality="nationality">
+</form>
