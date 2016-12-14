@@ -1,0 +1,8 @@
+<br><br>
+<a href='/artists/<%= @artist.id %>/edit'>Edit This Artist</a>
+<h2><a href="/artists">All Artists</a></h2>
+<div class="artist">
+  <p>Artist Name: <%= @artist.name %></p>
+  <p>Artist Nationality: <%= @artist.nationality %></p>
+  <p>Artist Photo:</p><img src='<%= @artist.photo_url %>' style="width: 500px;">
+</div>
