@@ -1,0 +1,5 @@
+
+<% @artist.each do |x|%>
+  <div><%= x.name %>
+        <img src='<%=x.photo_url%>'>  <a href="/artist/edit">Edit this artist</a></div>
+<% end %>
