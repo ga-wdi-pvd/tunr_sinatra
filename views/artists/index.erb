@@ -1,0 +1,27 @@
+<h2><a href="/artists">All Artists</a></h2>
+<%@artists.each do |artist|%>
+<p>
+  <a href="/artists/<%=artist.id%>"><%=artist.name%></a>
+</p>
+<% end%>
+
+<form action="/artists/<%= @artist.id %>" method="post">
+  <input type="hidden" name="_method" value="put">
+
+  <label for="artist[name]">Name:</label>
+  <input name="artist[name]" value="<%= @artist.name %>">
+
+  <label for="artist[nationality]">Nationality:</label>
+  <input name="artist[nationality]" value="<%= @artist.nationality %>">
+
+  <label for="artist[photo_url]">Photo_url:</label>
+  <input name="artist[photo_url]" value="<%= @artist.photo_url %>">
+
+  <input type="artist" value="Update">
+</form>
+
+<h2>Delete Artist<h2>
+<form action="/artists/<%= @artist.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input class="button-delete" type="submit" value="Delete!">
+</form>
