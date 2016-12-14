@@ -1,0 +1,6 @@
+<h2><a href="/artists">All Artists</a></h2>
+<h3><%= @artist.name %></h3>
+<form method="POST" action="/artists">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit" name="id" value="<%= @artist.id %>">Delete</button>
+</form>
