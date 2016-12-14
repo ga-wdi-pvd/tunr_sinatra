@@ -1,0 +1,8 @@
+<h2> Songs </h2>
+<% @song.each do |song| %>
+<p>
+  <a href="/songs/<%= song.id %>"><%= song.title %></a>
+</p>
+<% end %>
+
+<p><a href ="/song/new">Add a new song</a></p>
