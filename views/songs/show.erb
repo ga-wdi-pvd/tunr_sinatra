@@ -1,0 +1,13 @@
+<h2><a href="/songs">All Songs</a></h2>
+<div class="song">
+  <p>Song Title: <%= @songs.title %></p>
+  <p>Song Album: <%= @songs.album %></p>
+  <p>Artist: <a href="/artists/<%= @artists.id %>"><%= @artists.name %></a></p>
+
+
+  <br>
+<!--
+  <a href='/songs/<%= @songs.id %>/edit'>Edit This Song</a><br>
+  <a href='/songs/<%= @songs.id %>/delete'>Delete This Song</a>
+-->
+</div>
